@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PotensiComponent } from './potensi/potensi.component';
-import { PotensiItemComponent } from './potensi-item/potensi-item.component';
+import { PotensiItemComponent } from './potensi/potensi-item/potensi-item.component';
 import { SubpotensiListComponent } from './potensi/potensi-item/subpotensi-list/subpotensi-list.component';
 import { SubpotensiItemComponent } from './potensi/potensi-item/subpotensi-list/subpotensi-item/subpotensi-item.component';
 import { SubpotensiDetailComponent } from './potensi/potensi-item/subpotensi-list/subpotensi-item/subpotensi-detail/subpotensi-detail.component';
