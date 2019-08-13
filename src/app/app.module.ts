@@ -20,6 +20,7 @@ import { DatasetListComponent } from './dataset/dataset-list/dataset-list.compon
 import { DatasetItemComponent } from './dataset/dataset-list/dataset-item/dataset-item.component';
 import { DatasetTabelComponent } from './dataset/dataset-tabel/dataset-tabel.component';
 import { DatasetGrafikComponent } from './dataset/dataset-grafik/dataset-grafik.component';
+import { BannerComponent } from './home/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DatasetGrafikComponent } from './dataset/dataset-grafik/dataset-grafik.
     DatasetListComponent,
     DatasetItemComponent,
     DatasetTabelComponent,
-    DatasetGrafikComponent
+    DatasetGrafikComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
