@@ -1,0 +1,25 @@
+table {
+  margin: 10% auto auto;
+}
+
+td {
+  padding: 0.5em;
+}
+
+#mailbox {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  display: block;
+}
+
+#devsupp {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  display: block;
+}
+
+#dukungan {
+  margin: 15% auto auto;
+}
