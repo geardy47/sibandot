@@ -5,3 +5,34 @@
   background: #007bff;
   background: linear-gradient(to left, #0055ff, #8c00ff);
 }
+.logo-bandot {
+  height: 60px;
+}
+.active {
+  border-bottom: 2px solid white;
+}
+.beranda:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
+.potensi:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
+.statistik:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
+.datasets:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
+.peta:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 8px;
+  transition: 0.3s;
+}
