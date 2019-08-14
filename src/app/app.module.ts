@@ -21,6 +21,8 @@ import { DatasetItemComponent } from './dataset/dataset-list/dataset-item/datase
 import { DatasetTabelComponent } from './dataset/dataset-tabel/dataset-tabel.component';
 import { DatasetGrafikComponent } from './dataset/dataset-grafik/dataset-grafik.component';
 import { BannerComponent } from './home/banner/banner.component';
+import { AgmCoreModule } from '@agm/core';
+import { PetaComponent } from './peta/peta.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +44,15 @@ import { BannerComponent } from './home/banner/banner.component';
     DatasetItemComponent,
     DatasetTabelComponent,
     DatasetGrafikComponent,
-    BannerComponent
+    BannerComponent,
+    PetaComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyAEAXBtxNaSf0NqcLc6Zwk0qqwKK7zS0S4'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
