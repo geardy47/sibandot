@@ -1,0 +1,12 @@
+body {
+    min-height: 80.7vh;
+    position: relative;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
