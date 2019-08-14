@@ -1,0 +1,19 @@
+.icon-potensi {
+    width: 50px;
+}
+.img-responsive {
+    margin:0 auto;  
+}
+.card {
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+
+    padding: 0px;
+    border: 0px;
+}
+.card-custom {
+    width: 120px;
+    height: 120px;
+}
