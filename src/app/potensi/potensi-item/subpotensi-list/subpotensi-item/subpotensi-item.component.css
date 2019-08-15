@@ -11,3 +11,10 @@
 .card-custom {
         max-width: 270px;
 }
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+p,a {
+  font-family: 'Varela', sans-serif;
+}

@@ -21,3 +21,6 @@ body {
 .img-responsive {
     margin:0 auto;  
 }
+p,a{
+    font-family: 'Varela', sans-serif;
+}

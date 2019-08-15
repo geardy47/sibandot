@@ -23,3 +23,10 @@ td {
 #dukungan {
   margin: 15% auto auto;
 }
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+p, td {
+  font-family: 'Varela', sans-serif;
+}

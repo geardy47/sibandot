@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
 }
 
-h1, p {
+h1 {
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+p {
+  color: white;
+  font-family: 'Varela', sans-serif;
 }

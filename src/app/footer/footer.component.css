@@ -5,3 +5,6 @@
     background: #007bff;
     background: linear-gradient(to left, #0055ff, #8c00ff);
 }
+small {
+    font-family: 'Open Sans', sans-serif;
+}

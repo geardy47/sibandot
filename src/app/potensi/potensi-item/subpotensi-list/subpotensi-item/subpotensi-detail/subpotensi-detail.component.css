@@ -1,8 +1,18 @@
 .header-detail {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('/src/assets/img/banner.jpg');
+    height: 400px;
+    background-image: url('/assets/img/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+p,a {
+  font-family: 'Varela', sans-serif;
+}
