@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,14 @@ import { DatasetGrafikComponent } from './dataset/dataset-grafik/dataset-grafik.
 import { BannerComponent } from './home/banner/banner.component';
 import { AgmCoreModule } from '@agm/core';
 import { PetaComponent } from './peta/peta.component';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'potensi', component: PotensiComponent },
+  { path: 'statistik', component: StatistikComponent },
+  { path: 'datasets', component: DatasetComponent },
+  { path: 'peta', component: PetaComponent }
+];
 
 @NgModule({
   declarations: [
@@ -52,7 +61,8 @@ import { PetaComponent } from './peta/peta.component';
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey:'AIzaSyAEAXBtxNaSf0NqcLc6Zwk0qqwKK7zS0S4'
-    })
+    }),
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
