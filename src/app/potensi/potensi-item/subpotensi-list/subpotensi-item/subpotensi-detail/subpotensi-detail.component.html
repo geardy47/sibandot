@@ -1,7 +1,7 @@
 <header class="header-detail">
     <div class="container h-100">
-      <div class="row h-100 align-items-center">
-      </div>
+        <div class="row h-100 align-items-center">
+        </div>
     </div>
 </header>
 <div class="container pt-3">
@@ -22,7 +22,8 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi.
+                        Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu
+                        detraxit constituam, an mel iudico constituto efficiendi.
                     </p>
                 </div>
             </div>
@@ -32,7 +33,8 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi.
+                        Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu
+                        detraxit constituam, an mel iudico constituto efficiendi.
                     </p>
                 </div>
             </div>
@@ -49,14 +51,17 @@
                     <h5>Peta</h5>
                 </div>
                 <div class="col-md-8">
-                    <p>
-                    Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi.
-                    </p>
+                    <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [disableDefaultUI]="false"
+                        (mapClick)="onChooseLocation($event)">
+
+                        <agm-marker [latitude]="latitude" [longitude]="longitude">
+                        </agm-marker>
+                    </agm-map>
                 </div>
             </div>
         </div>
         <div class="col-md-2">
-           <!--One of three columns-->
+            <!--One of three columns-->
         </div>
     </div>
 </div>

@@ -16,3 +16,7 @@ h5 {
 p,a {
   font-family: 'Varela', sans-serif;
 }
+agm-map {
+  height: 300px;
+  width: 330px;
+}
