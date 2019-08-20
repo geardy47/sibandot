@@ -1,12 +1,8 @@
-<div class="container pb-5">
-  <div class="row mt-5 justify-content-center">
-    <div class="card card-custom mx-2 mb-3" *ngFor="let sub of potensi">
-      <img src="/assets/img/potensi-item/sdkranji4.jpg" class="card-img-top" alt="sdkranji4">
-      <div class="card-body">
-        <h5 class="card-title">{{ sub.nama }}</h5>
-        <p class="card-text">{{ sub.info }}</p>
-        <a href="#" class="btn btn-primary">Detail Informasi</a>
-      </div>
-    </div>
+<div class="card card-custom mx-2 mb-3">
+  <img src="{{ potensi.banner }}" class="card-img-top" alt="sdkranji4" />
+  <div class="card-body">
+    <h5 class="card-title">{{ potensi.nama }}</h5>
+    <p class="card-text">{{ potensi.info }}</p>
+    <a href="#" class="btn btn-primary" (click)="onSelected()">Detail Informasi</a>
   </div>
 </div>

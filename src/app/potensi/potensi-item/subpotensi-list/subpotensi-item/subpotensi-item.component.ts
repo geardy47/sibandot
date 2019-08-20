@@ -1,5 +1,5 @@
-import { Potensi } from './../../../potensi.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Potensi } from 'src/app/potensi/potensi.model';
 
 @Component({
   selector: 'app-subpotensi-item',
@@ -7,57 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subpotensi-item.component.css']
 })
 export class SubpotensiItemComponent implements OnInit {
-  potensi: Potensi[] = [
-    new Potensi(
-      'SD Negeri 4 Kranji',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis euismod neque. In hac habitasse platea dictumst.',
-      '(0281) 987654',
-      'localhost:4200',
-      '',
-      '../../../../../assets/img/potensi-item/sdkranji4.jpg'
-    ),
-    new Potensi(
-      'SD Negeri 4 Kranji',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis euismod neque. In hac habitasse platea dictumst.',
-      '(0281) 987654',
-      'localhost:4200',
-      '',
-      '../../../../../assets/img/potensi-item/sdkranji4.jpg'
-    ),
-    new Potensi(
-      'SD Negeri 4 Kranji',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis euismod neque. In hac habitasse platea dictumst.',
-      '(0281) 987654',
-      'localhost:4200',
-      '',
-      '../../../../../assets/img/potensi-item/sdkranji4.jpg'
-    ),
-    new Potensi(
-      'SD Negeri 4 Kranji',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis euismod neque. In hac habitasse platea dictumst.',
-      '(0281) 987654',
-      'localhost:4200',
-      '',
-      '../../../../../assets/img/potensi-item/sdkranji4.jpg'
-    ),
-    new Potensi(
-      'SD Negeri 4 Kranji',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis euismod neque. In hac habitasse platea dictumst.',
-      '(0281) 987654',
-      'localhost:4200',
-      '',
-      '../../../../../assets/img/potensi-item/sdkranji4.jpg'
-    ),
-    new Potensi(
-      'SD Negeri 4 Kranji',
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis euismod neque. In hac habitasse platea dictumst.',
-      '(0281) 987654',
-      'localhost:4200',
-      '',
-      '../../../../../assets/img/potensi-item/sdkranji4.jpg'
-    )
-  ];
+  @Input() potensi: Potensi;
+  @Output() subpotensiSelected = new EventEmitter<void>();
+
   constructor() {}
 
   ngOnInit() {}
+
+  onSelected() {
+    this.subpotensiSelected.emit();
+  }
 }
