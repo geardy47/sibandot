@@ -28,6 +28,8 @@ import { PetaComponent } from './peta/peta.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'potensi', component: PotensiComponent },
+  { path: 'potensi/:kategori/:jenis', component: SubpotensiListComponent },
+  { path: 'potensi/:kategori/:jenis/:nama', component: SubpotensiDetailComponent },
   { path: 'statistik', component: StatistikComponent },
   { path: 'datasets', component: DatasetComponent },
   { path: 'peta', component: PetaComponent }
@@ -60,7 +62,7 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey:'AIzaSyAEAXBtxNaSf0NqcLc6Zwk0qqwKK7zS0S4'
+      apiKey: 'AIzaSyAEAXBtxNaSf0NqcLc6Zwk0qqwKK7zS0S4'
     }),
     RouterModule.forRoot(appRoutes)
   ],
