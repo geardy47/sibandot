@@ -9,9 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PotensiComponent } from './potensi/potensi.component';
 import { PotensiItemComponent } from './potensi/potensi-item/potensi-item.component';
-import { SubpotensiListComponent } from './potensi/potensi-item/subpotensi-list/subpotensi-list.component';
-import { SubpotensiItemComponent } from './potensi/potensi-item/subpotensi-list/subpotensi-item/subpotensi-item.component';
-import { SubpotensiDetailComponent } from './potensi/potensi-item/subpotensi-detail/subpotensi-detail.component';
+import { SubpotensiListComponent } from './potensi/subpotensi/subpotensi-list/subpotensi-list.component';
+import { SubpotensiItemComponent } from './potensi/subpotensi/subpotensi-list/subpotensi-item/subpotensi-item.component';
+import { SubpotensiDetailComponent } from './potensi/subpotensi/subpotensi-detail/subpotensi-detail.component';
 import { StatistikComponent } from './statistik/statistik.component';
 import { StatistikListComponent } from './statistik/statistik-list/statistik-list.component';
 import { StatistikItemComponent } from './statistik/statistik-list/statistik-item/statistik-item.component';
@@ -24,6 +24,7 @@ import { DatasetGrafikComponent } from './dataset/dataset-grafik/dataset-grafik.
 import { BannerComponent } from './home/banner/banner.component';
 import { AgmCoreModule } from '@agm/core';
 import { PetaComponent } from './peta/peta.component';
+import { SubpotensiComponent } from './potensi/subpotensi/subpotensi.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -54,7 +55,8 @@ const appRoutes: Routes = [
     DatasetTabelComponent,
     DatasetGrafikComponent,
     BannerComponent,
-    PetaComponent
+    PetaComponent,
+    SubpotensiComponent
   ],
   imports: [
     BrowserModule,
