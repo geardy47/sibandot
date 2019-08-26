@@ -1,12 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-header" id="sticky-header">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" routerLink="/">
     <img src="/assets/icon/bandot.png" class="logo-bandot">
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
+  </button>-->
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" (click)="isCollapsed = !isCollapsed">
+    <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
+
+  <!--<div class="collapse navbar-collapse" id="navbarNav">-->
+  <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">
         <a routerLink="/" class="nav-link beranda">Beranda<span class="sr-only">(current)</span></a>
@@ -14,8 +22,14 @@
       <li class="nav-item" routerLinkActive="active">
         <a routerLink="/potensi" class="nav-link potensi">Potensi</a>
       </li>
-      <li class="nav-item" routerLinkActive="active">
-        <a routerLink="/statistik" class="nav-link statistik">Statistik</a>
+      <li ngbDropdown class="nav-item" routerLinkActive="active">
+        <a ngbDropdownToggle class="nav-link statistik" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Statistik
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdownMenuLink">
+            <a ngbDropdownItem routerLink="/statistik">Organisasi</a>
+            <a ngbDropdownItem routerLink="/statistik">Topik</a>
+        </div>
       </li>
       <li class="nav-item" routerLinkActive="active">
         <a routerLink="/datasets" class="nav-link datasets">Datasets</a>

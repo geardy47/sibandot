@@ -13,3 +13,8 @@ export class HeaderComponent implements OnInit {
   }
 
 }
+export class NgbdDropdownBasic {
+}
+export class NgbdCollapseBasic {
+  public isCollapsed = false;
+}
