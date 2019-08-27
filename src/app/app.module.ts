@@ -33,6 +33,8 @@ const appRoutes: Routes = [
   { path: 'potensi/:kategori/:jenis/:nama', component: SubpotensiDetailComponent },
   { path: 'statistik', component: StatistikComponent },
   { path: 'datasets', component: DatasetComponent },
+  { path: 'datasets/kodedataset/tabel', component: DatasetTabelComponent },
+  { path: 'datasets/kodedataset/grafik', component: DatasetGrafikComponent },
   { path: 'peta', component: PetaComponent }
 ];
 
