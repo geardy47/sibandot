@@ -1,4 +1,16 @@
 .download{
-    height:25px;
-    width:25px;
+    height:40px;
+    width:40px;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }

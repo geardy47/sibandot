@@ -1,38 +1,91 @@
-<div class="container">
-    <div class="row col-md-12 mt-4">
-        <h4>DATASET</h4>
-    </div>
-    <div class="shadow-none mb-5 bg-light pb-3 col-md-12">
-        <div class="row">
-            <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-outline-primary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off"> Tabel
-                </label>
-                <label class="btn btn-outline-primary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Grafik
-                </label>
-            </div>
+<div class="container py-4">
+    <h2>DATASET</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" routerLink="/datasets/kodedataset/tabel">Tabel</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/datasets/kodedataset/grafik" onclick="callChart()">Grafik</a>
+        </li>
+    </ul>
+
+    <div class="row pt-4">
+        <div class="col-md-7">
+            <form>
+                <div class="form-group row">
+                    <label for="pilihtahun" class="col-md-2 col-form-label">Tahun</label>
+                    <div class="col-md-4">
+                        <select class="custom-select">
+                            <option selected disabled>Pilih tahun</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <div class="row col-md-12 mt-4">
-
-            <div class="col-md-1">
-                <h5>Tahun:</h5>
-            </div>
-            <div class="col-md-2">
-                <select class="form-control form-control-sm">
-                    <option>pilih tahun</option>
-                </select>
-            </div>
-            <div class="col-md-8">
-                <h5 class="text-right">Unduh Dataset</h5>
-
-            </div>
-            <div class="col-md-1 my-1">
+        <div class="col-md-2">
+            <h5>Unduh Dataset</h5>
+        </div>
+        <div class="col-md-3">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Unduh file CSV">
                 <img src="../../../assets/icon/dcsv.png" class="download" alt="">
-                <img src=" ../../../assets/icon/dxls.png" class="download" alt="">
-            </div>
+            </a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Unduh file XLS">
+                <img src="../../../assets/icon/dxls.png" class="download" alt="">
+            </a>   
         </div>
-        <img src="../../../assets/img/tabeldataset.PNG" alt="" class="col-md-12">
     </div>
+
+    <table class="table table-striped pt-4">
+        <thead>
+            <tr>
+                <th colspan="5" scope="col" style="text-align: center">Data Banyak Perusahaan Industri Menurut Sektor dan Tenaga Kerja</th>
+            </tr>
+            <tr>
+                <th scope="col">Sektor</th>
+                <th scope="col">Jumlah Terdaftar</th>
+                <th scope="col">Jumlah Berjalan</th>
+                <th scope="col">Jumlah Tenaga Kerja</th>
+                <th scope="col">Nilai Investasi (Rp.000)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Purwokerto Selatan</td>
+                <td>37490</td>
+                <td>37490</td>
+                <td>89204</td>
+                <td>34494778855</td>
+            </tr>
+            <tr>
+                <td>Baturraden</td>
+                <td>2389</td>
+                <td>2340</td>
+                <td>5719</td>
+                <td>5752623400</td>
+            </tr>
+            <tr>
+                <td>Banyumas</td>
+                <td>2651</td>
+                <td>2413</td>
+                <td>9366</td>
+                <td>14630248939</td>
+            </tr>
+            <tr>
+                <td>Patikraja</td>
+                <td>1354</td>
+                <td>1349</td>
+                <td>4732</td>
+                <td>23647126214</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+    });
+</script>
