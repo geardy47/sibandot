@@ -29,8 +29,8 @@ import { PetaComponent } from './peta/peta.component';
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'potensi', component: PotensiComponent },
-  { path: 'potensi/:kategori/:jenis', component: SubpotensiListComponent },
-  { path: 'potensi/:kategori/:jenis/:nama', component: SubpotensiDetailComponent },
+  { path: 'potensi/kategori/jenis', component: SubpotensiListComponent },
+  { path: 'potensi/kategori/jenis/nama', component: SubpotensiDetailComponent },
   { path: 'statistik', component: StatistikComponent },
   { path: 'statistik/organisasi', component: StatistikListComponent },
   { path: 'statistik/topik', component: StatistikListComponent },
